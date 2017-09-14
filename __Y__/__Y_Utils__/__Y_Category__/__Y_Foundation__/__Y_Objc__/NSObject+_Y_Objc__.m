@@ -11,6 +11,11 @@
 
 @implementation NSObject (_Y_Objc__)
 
++ (void)y_enumerateProperties:(y_propertiesEnumeration)enumeration
+{
+    
+}
+
 + (NSArray *)y_propertyList
 {
     unsigned int count = 0;
@@ -27,6 +32,9 @@
         // 转换成OC字符串
         NSString *proName = [[NSString alloc] initWithCString:cPropertyName encoding:NSUTF8StringEncoding];
         [propertyArray addObject:proName];
+//        const char *cPropertyAttri = property_getAttributes(property);
+//        NSString *proAttr = [[NSString alloc] initWithCString:cPropertyAttri encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@",proAttr);
     }
     // 遇到copy要手动释放
     free(propertys);

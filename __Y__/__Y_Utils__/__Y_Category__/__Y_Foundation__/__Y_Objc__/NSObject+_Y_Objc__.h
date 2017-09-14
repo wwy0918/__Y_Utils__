@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^y_propertiesEnumeration)(NSString *propertyType,NSString *property);
+
 @interface NSObject (_Y_Objc__)
+
+/**
+ * 遍历当前类的所有属性
+ */
++ (void)y_enumerateProperties:(y_propertiesEnumeration)enumeration;
 
 /**
  * 获取当前类的所有属性列表

@@ -22,7 +22,9 @@
     
     NSLog(@"%@",[self localeDate:[NSDate date]]);
     
+    NSLog(@"%@ \n %@",[ViewController y_propertyList], [ViewController y_ivarList]);
 }
+
 
 
 - (NSDate*)localeDate:(NSDate*)date
