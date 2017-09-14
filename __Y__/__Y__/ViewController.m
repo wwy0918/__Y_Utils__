@@ -6,6 +6,7 @@
 //  Copyright © 2017年 wwy. All rights reserved.
 //
 
+#import "__Y__.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -17,12 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSLog(@"%@",[self localeDate:[NSDate date]]);
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSDate*)localeDate:(NSDate*)date
+{
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate:date];
+    NSDate *localeDate = [date dateByAddingTimeInterval:interval];
+    return localeDate;
 }
 
 

@@ -111,6 +111,16 @@
     return [dayComponents second];
 }
 
++ (NSDate *)y_localeDate:(NSDate *)date {
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate:date];
+    NSDate *localeDate = [date dateByAddingTimeInterval:interval];
+    return localeDate;
+}
+- (NSDate *)y_toLocale {
+    return [NSDate y_localeDate:self];
+}
+
 - (NSUInteger)y_daysInYear {
     return [NSDate y_daysInYear:self];
 }

@@ -63,6 +63,7 @@
 		6E2D64B71F692538004E5185 /* __Y_RSA__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D647E1F692538004E5185 /* __Y_RSA__.m */; };
 		6E2D64B81F692538004E5185 /* __Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64821F692538004E5185 /* __Base64.m */; };
 		6E2D64B91F692538004E5185 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64841F692538004E5185 /* CocoaSecurity.m */; };
+		6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +176,8 @@
 		6E2D64821F692538004E5185 /* __Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __Base64.m; sourceTree = "<group>"; };
 		6E2D64831F692538004E5185 /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
 		6E2D64841F692538004E5185 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		6EA4735B1F6A2F4D00814D3D /* NSDateFormatter+__Y__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+__Y__.h"; sourceTree = "<group>"; };
+		6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+__Y__.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +293,8 @@
 			children = (
 				6E2D640C1F692537004E5185 /* NSDate+__Y__.h */,
 				6E2D640D1F692537004E5185 /* NSDate+__Y__.m */,
+				6EA4735B1F6A2F4D00814D3D /* NSDateFormatter+__Y__.h */,
+				6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */,
 			);
 			path = __Y_Date__;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				6E2D64901F692538004E5185 /* NSString+__Y_Regular.m in Sources */,
 				6E2D64AA1F692538004E5185 /* UIView+draggable.m in Sources */,
 				6E2D649B1F692538004E5185 /* UIImage+Capture.m in Sources */,
+				6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */,
 				6E2D64961F692538004E5185 /* UIView+__Y_FrameSet.m in Sources */,
 				6E2D648E1F692538004E5185 /* NSString+__Y_Common__.m in Sources */,
 				6E2D648D1F692538004E5185 /* NSObject+_Y_Objc__.m in Sources */,
@@ -901,6 +907,7 @@
 				6E2D63FF1F69252E004E5185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

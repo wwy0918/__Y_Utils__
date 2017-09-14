@@ -27,6 +27,12 @@
 + (NSUInteger)y_second:(NSDate *)date;
 
 /**
+ * 转换成本地时间
+ */
++ (NSDate *)y_localeDate:(NSDate *)date;
+- (NSDate *)y_toLocale;
+
+/**
  * 获取一年中的总天数
  */
 - (NSUInteger)y_daysInYear;
