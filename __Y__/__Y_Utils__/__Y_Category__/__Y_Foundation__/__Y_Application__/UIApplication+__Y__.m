@@ -36,7 +36,6 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"tel://" stringByAppendingString:tel]]];
     }
 }
-#pragma clang diagnostic pop
 
 - (void)y_call:(NSString *)tel _in:(UIView *)aView
 {
@@ -54,6 +53,7 @@
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto://" stringByAppendingString:address]]];
 }
+#pragma clang diagnostic pop
 
 - (UIImage *)y_launchImage
 {
