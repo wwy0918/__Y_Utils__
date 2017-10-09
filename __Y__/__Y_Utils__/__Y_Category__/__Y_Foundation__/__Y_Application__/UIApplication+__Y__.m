@@ -110,7 +110,6 @@
 
 - (NSInteger)y_documentsFolderSizeInBytes
 {
-    
     NSString *folderPath = [self y_documentsDirectoryPath];
     
     NSArray *filesArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:folderPath error:nil];
