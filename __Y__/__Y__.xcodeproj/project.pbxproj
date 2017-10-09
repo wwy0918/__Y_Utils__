@@ -64,6 +64,7 @@
 		6E2D64B81F692538004E5185 /* __Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64821F692538004E5185 /* __Base64.m */; };
 		6E2D64B91F692538004E5185 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64841F692538004E5185 /* CocoaSecurity.m */; };
 		6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */; };
+		6EE199DA1F73A60A008B66C7 /* _Y_Bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +179,7 @@
 		6E2D64841F692538004E5185 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		6EA4735B1F6A2F4D00814D3D /* NSDateFormatter+__Y__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+__Y__.h"; sourceTree = "<group>"; };
 		6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+__Y__.m"; sourceTree = "<group>"; };
+		6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = _Y_Bank.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 			children = (
 				6E2D64181F692537004E5185 /* NSString+__Y_Common__.h */,
 				6E2D64191F692537004E5185 /* NSString+__Y_Common__.m */,
+				6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */,
 			);
 			path = __Y_Common__;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				6E2D64B31F692538004E5185 /* Lato-Regular.ttf in Resources */,
 				6E2D64B41F692538004E5185 /* Lato-Thin.ttf in Resources */,
 				6E2D63F91F69252E004E5185 /* LaunchScreen.storyboard in Resources */,
+				6EE199DA1F73A60A008B66C7 /* _Y_Bank.plist in Resources */,
 				6E2D63F61F69252E004E5185 /* Assets.xcassets in Resources */,
 				6E2D64B51F692538004E5185 /* Lato-ThinItalic.ttf in Resources */,
 				6E2D64B61F692538004E5185 /* Area.plist in Resources */,

@@ -31,8 +31,13 @@
 - (CGFloat)y_widthWithFontSize:(CGFloat)fontSize height:(CGFloat)height;
 
 /**
- * 去掉前后空格
+ * 去掉字符串前后空格
  */
-- (NSString *)y_trimmedString;
+- (NSString *)y_stringByTrim;
+
+/**
+ * @"", @" ", @"   ", @"\n" and so or
+ */
+- (BOOL)y_isBlank;
 
 @end

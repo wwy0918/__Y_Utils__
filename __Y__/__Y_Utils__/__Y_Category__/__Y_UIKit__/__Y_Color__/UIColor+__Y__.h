@@ -26,7 +26,7 @@
  *
  *  @return Color
  */
-+ (UIColor *)y_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha;
++ (UIColor *)y_colorWithHex:(UInt32)hex alpha:(CGFloat)alpha;
 
 /**
  *  使用HEX命名方式的颜色字符串生成一个UIColor对象

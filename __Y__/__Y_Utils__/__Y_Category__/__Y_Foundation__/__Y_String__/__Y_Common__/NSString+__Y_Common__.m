@@ -31,9 +31,16 @@
 }
 
 
-- (NSString *)y_trimmedString
+- (NSString *)y_stringByTrim
 {
-    return [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+- (BOOL)y_isBlank
+{
+    NSCharacterSet *blank = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *new = [self stringByTrimmingCharactersInSet:blank];
+    return !new.length;
 }
 
 @end

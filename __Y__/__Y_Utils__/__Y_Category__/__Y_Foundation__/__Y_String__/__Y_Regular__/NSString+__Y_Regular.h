@@ -180,6 +180,13 @@
 - (BOOL)y_isBankCard;
 
 /**
+ 通过卡号获取银行名称
+ * bankName 银行名称
+ * isValid 是否是有效的卡号
+ */
+- (void)y_bankWithComplete:(void (^)(NSString *bankName, BOOL isValid))complete;
+
+/**
  *  车牌号的有效性
  */
 - (BOOL)y_isCarNumber;

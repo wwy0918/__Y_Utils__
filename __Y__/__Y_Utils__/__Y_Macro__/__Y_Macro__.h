@@ -53,14 +53,17 @@
 
 #pragma mark ----------------------------------------------   打印日志  ------------------------------------------------------
 #ifdef DEBUG
-#define __log( s, ... )  NSLog( @"\n < %@: \n %s -- (第%d行) \n > \n %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __func__,__LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define __log( s, ... )  NSLog( @"\n < %@: \n %s -- (第%d行) \n > \n %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __func__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #else
 #define __log( s, ... )
 #endif
 
 
 
-#pragma mark ----------------------------------------------   弱 & 强引用  ------------------------------------------------------
+#pragma mark -------------------------------------------   弱 & 强引用  ---------------------------------------------------
+/// one
+#define __wSelf  __weak typeof(self) wself = self;
+/// or
 #define __weakSelf(type)  __weak typeof(type) weak##type = type;
 #define __strongSelf(type)  __strong typeof(type) type = weak##type;
 
@@ -68,21 +71,20 @@
 
 
 #pragma mark ----------------------------------------------   系统  ------------------------------------------------------
-// 当前语言
+/// 当前语言
 #define __current_language__  ([[NSLocale preferredLanguages] objectAtIndex:0])
 
-// 应用程序的名字
+/// 应用程序的名字
 #define __AppDisplayName__  [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
 
-// 应用程序的版本
+/// 应用程序的版本
 #define __app_shortVersion__  [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"] floatValue]
 #define __app_Version__  [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"] floatValue]
 
-// 操作系统版本号
+/// 操作系统版本号
 #define __ios_version__  ([[[UIDevice currentDevice] systemVersion] floatValue])
 
-
-// 判断设备室真机还是模拟器
+/// 判断设备室真机还是模拟器
 #if TARGET_OS_IPHONE
 /** iPhone Device */
 #endif
@@ -92,9 +94,9 @@
 #endif
 
 
-// 是否是iPhone
+/// 是否是iPhone
 #define __is_iPhone__  (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-// 是否是iPad
+/// 是否是iPad
 #define __is_iPad__  (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 
@@ -123,20 +125,22 @@
 #define __ios11_sdk_allowed__ YES
 #endif
 
-#pragma mark ----------------------------------------------   屏幕尺寸  ------------------------------------------------------
-// 是否横竖屏 , 用户界面横屏了才会返回YES
+
+
+#pragma mark ------------------------------------   屏幕尺寸  ------------------------------------------------------
+/// 是否横竖屏 , 用户界面横屏了才会返回YES
 #define __is_landscape__  UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
-// 无论支不支持横屏，只要设备横屏了，就会返回YES
+/// 无论支不支持横屏，只要设备横屏了，就会返回YES
 #define __is_device_landscape__  UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])
 
-// 除去信号区的屏幕尺寸
+/// 除去信号区的屏幕尺寸
 #define __app_frame__  ([[UIScreen mainScreen] applicationFrame])
 #define __app_height__  ([[UIScreen mainScreen] applicationFrame].size.height)
 #define __app_width__  ([[UIScreen mainScreen] applicationFrame].size.width)
 
-// 屏幕宽度
+/// 屏幕宽度
 #define __screen_width__  (__ios_version__ >= 8.0 ? [[UIScreen mainScreen] bounds].size.width : (__is_landscape__ ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width))
-// 屏幕高度
+/// 屏幕高度
 #define __screen_height__  (__ios_version__ >= 8.0 ? [[UIScreen mainScreen] bounds].size.height : (__is_landscape__ ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height))
 
 
@@ -157,16 +161,16 @@
 //#endif
 
 
-// 是否Retina
+/// 是否Retina
 #define __is_retina__  ([[UIScreen mainScreen] scale] >= 2.0)
 
-// 设备屏幕尺寸
+/// 设备屏幕尺寸
 #define __is_55inch__  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 #define __is_47inch__  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 #define __is_40inch__  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define __is_35inch__  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) :NO)
 
-// 中英状态下键盘的高度
+/// 中英状态下键盘的高度
 #define __kEnglishKeyboardHeight  (216.f)
 #define __kChineseKeyboardHeight  (252.f)
 
@@ -182,47 +186,48 @@
 
 
 #pragma mark ----------------------------------------------   常用  ------------------------------------------------------
-// 挨打的
 #define __Application__  [UIApplication sharedApplication]
 #define __KeyWindow__  [UIApplication sharedApplication].keyWindow
 #define __AppDelegate__  [UIApplication sharedApplication].delegate
 #define __UserDefaults__  [NSUserDefaults standardUserDefaults]
 #define __NotificationCenter__  [NSNotificationCenter defaultCenter]
 
-// 设置 view 圆角和边框
-#define __ViewBorderRadius__(View, Radius, Width, Color)\
+/// 设置 view 圆角和边框
+#define __ViewBorderRadius__(aView, Radius, Width, Color)\
 \
-[View.layer setCornerRadius:(Radius)];\
-[View.layer setMasksToBounds:YES];\
-[View.layer setBorderWidth:(Width)];\
-[View.layer setBorderColor:[Color CGColor]]
+[aView.layer setCornerRadius:(Radius)];\
+[aView.layer setMasksToBounds:YES];\
+[aView.layer setBorderWidth:(Width)];\
+[aView.layer setBorderColor:[Color CGColor]]
 
-// 由角度转换弧度 , 由弧度转换角度
+/// 由角度转换弧度 , 由弧度转换角度
 #define __degrees_to_radian__(x)  (M_PI * (x) / 180.0)
 #define __radian_to_degrees(radian)  (radian*180.0)/(M_PI)
 
-//获取图片资源
+/// 获取图片资源
 #define __UIImageMake(imgName)  [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
-
+/// 字符串是否为空
+#define __kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
 
 #pragma mark ----------------------------------------------   获取沙盒文件路径  ------------------------------------------------------
-// 获取Temp
+/// Temp
 #define __kPathTemp__  NSTemporaryDirectory()
 
-// 获取沙盒 Document
+/// Document
 #define __kPathDocument__  [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
-// 获取沙盒 Cache
+/// Library
+#define __kPathLibrary__  [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject]
+
+/// Cache
 #define __kPathCache__  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
-// 字符串是否为空
- #define __kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
 
-// 方法交换
-void ReplaceMethod(Class _class, SEL _originSelector, SEL _newSelector) {
+/// 方法交换
+void __ReplaceMethod(Class _class, SEL _originSelector, SEL _newSelector) {
     Method oriMethod = class_getInstanceMethod(_class, _originSelector);
     Method newMethod = class_getInstanceMethod(_class, _newSelector);
     BOOL isAddedMethod = class_addMethod(_class, _originSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));

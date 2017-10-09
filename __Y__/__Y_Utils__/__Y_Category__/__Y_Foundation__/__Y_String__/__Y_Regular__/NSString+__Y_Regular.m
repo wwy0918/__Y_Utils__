@@ -310,6 +310,37 @@
     return [predicate evaluateWithObject:self];
 }
 
+- (void)y_bankWithComplete:(void (^)(NSString *, BOOL))complete
+{
+    NSString *bankName = nil;
+    BOOL isValid = YES;
+    if(self.length<16 || self.length>19){
+        isValid = NO;
+        bankName = @"卡号不合法";
+    }
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"_Y_Bank" ofType:@"plist"];
+    NSDictionary* resultDic = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    NSArray *bankBin = resultDic.allKeys;
+    
+    //6位Bin号
+    NSString* cardbin_6 = [self substringWithRange:NSMakeRange(0, 6)];
+    //8位Bin号
+    NSString* cardbin_8 = [self substringWithRange:NSMakeRange(0, 8)];
+    
+    if ([bankBin containsObject:cardbin_6]) {
+        bankName = [resultDic objectForKey:cardbin_6];
+    }else if ([bankBin containsObject:cardbin_8]){
+        bankName = [resultDic objectForKey:cardbin_8];
+    }else{
+        bankName = @"其他银行";
+    }
+    
+    if (complete) {
+        complete(bankName, isValid);
+    }
+}
+
 - (BOOL)y_isCarNumber
 {
     //车牌号:湘K-DE829 香港车牌号码:粤Z-J499港

@@ -12,10 +12,10 @@
 
 + (UIColor *)y_colorWithHex:(UInt32)hex
 {
-    return [UIColor y_colorWithHex:hex andAlpha:1];
+    return [UIColor y_colorWithHex:hex alpha:1];
 }
 
-+ (UIColor *)y_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha
++ (UIColor *)y_colorWithHex:(UInt32)hex alpha:(CGFloat)alpha
 {
     return [UIColor colorWithRed:((hex >> 16) & 0xFF)/255.0
                            green:((hex >> 8) & 0xFF)/255.0
