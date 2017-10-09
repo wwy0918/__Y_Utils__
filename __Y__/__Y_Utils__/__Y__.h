@@ -4,7 +4,7 @@
 //
 //  Created by wwyun on 17/9/13.
 //  Copyright © 2017年 wwy. All rights reserved.
-//
+//  version 1.0
 
 #ifndef __Y___h
 #define __Y___h
