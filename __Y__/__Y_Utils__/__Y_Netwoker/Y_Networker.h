@@ -41,7 +41,7 @@
  post 请求
  @param url 请求地址
  @param parameters 请求参数
-  @param aView 菊花提示所在视图
+ @param aView 菊花提示所在视图
  @param success 成功回调
  @param logicFailure 业务逻辑失败回调
  @param connectFailure 连接失败回调
