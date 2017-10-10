@@ -37,14 +37,14 @@
     }
 }
 
-- (void)y_call:(NSString *)tel _in:(UIView *)aView
+- (void)y_callUserWebView:(NSString *)tel
 {
     UIWebView * callWebview = [[UIWebView alloc] init];
     [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[@"tel://" stringByAppendingString:tel]]]];
-    [aView addSubview:callWebview];
+    [[UIApplication sharedApplication].keyWindow addSubview:callWebview];
 }
 
-- (void)y_jumpToRateWithAppId:(NSString *)appId
+- (void)y_commentWithAppId:(NSString *)appId
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" stringByAppendingString:appId]]];
 }
@@ -88,6 +88,20 @@
 - (NSString *)y_documentsDirectoryPath
 {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+}
+
+- (NSString *)y_libraryPath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *basePath = [paths firstObject];
+    return basePath;
+}
+
+- (NSString *)y_cachePath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    NSString *basePath = [paths firstObject];
+    return basePath;
 }
 
 - (NSString *)y_documentsFolderSizeAsString
@@ -137,20 +151,6 @@
 - (NSString *)y_documentPath
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *basePath = [paths firstObject];
-    return basePath;
-}
-
-- (NSString *)y_libraryPath
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    NSString *basePath = [paths firstObject];
-    return basePath;
-}
-
-- (NSString *)y_cachePath
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *basePath = [paths firstObject];
     return basePath;
 }

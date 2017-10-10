@@ -10,69 +10,40 @@
 
 @interface UIApplication (__Y__)
 
-/**
- *  app版本
- */
+/// app版本
 - (NSString *)y_appVersion;
 
-/**
- build 版本号
- */
+/// build 版本号
 - (NSString *)y_appBuild;
 
-/**
- apps 证书编号 (例如MacKun.az.com)
- */
+/// bundle id
 - (NSString *)y_appBundleId;
 
-/**
- *  询问拨打电话
- */
+/// 拨打电话
 - (void)y_call:(NSString *)tel;
 
-/**
- *  webView拨打电话
- */
-- (void)y_call:(NSString *)tel _in:(UIView *)aView;
+/// webView拨打电话
+- (void)y_callUserWebView:(NSString *)tel;
 
-/**
- *  跳到app的评论页
- *
- *  @param appId APP的id号
- */
-- (void)y_jumpToRateWithAppId:(NSString *)appId;
+/// 跳到app的评论页
+- (void)y_commentWithAppId:(NSString *)appId;
 
-/**
- *  发邮件
- *
- *  @param address 邮件地址
- */
+/// 发邮件
 - (void)y_sendEmailToAddress:(NSString *)address;
 
-/**
- *  获取启动页图片
- */
+/// 获取启动页图片
 - (UIImage *)y_launchImage;
 
-/**
- *  沙盒的路径
- */
+/// 沙盒的路径
 - (NSString *)y_documentsDirectoryPath;
 
-/**
- * 沙盒的内容大小 (例如5 MB)
- */
+/// 沙盒内的字节大小
+- (NSInteger)y_documentsFolderSizeInBytes;
+
+/// 沙盒的内容大小 (例如5 MB)
 - (NSString *)y_documentsFolderSizeAsString;
 
-/**
- 沙盒内的字节大小
- */
-- (NSInteger)y_documentsFolderSizeInBytes;
-/**
- *  程序的大小 包括文件 缓冲 以及 下载
- *
- *  @return  所有文件大小
- */
+/// 程序的大小 包括文件 缓冲 以及 下载
 - (NSString *)y_applicationSize;
 
 

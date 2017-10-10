@@ -10,7 +10,14 @@
 
 @implementation NSDateFormatter (__Y__)
 
-+ (instancetype)y_YMD
++ (instancetype)y_formatterDefault
+{
+    NSDateFormatter *formatter = [[self alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    return formatter;
+}
+
++ (instancetype)y_formatterWithYMD
 {
     NSDateFormatter *formatter = [[self alloc] init];
     formatter.dateFormat = @"yyyy-MM-dd";

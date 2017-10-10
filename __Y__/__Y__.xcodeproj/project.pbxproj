@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4DA0768B7FE0565EE06021 /* libPods-__Y__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AC55E6DBBC18B88968D6C /* libPods-__Y__.a */; };
 		6E2D63EB1F69252E004E5185 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63EA1F69252E004E5185 /* main.m */; };
 		6E2D63EE1F69252E004E5185 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63ED1F69252E004E5185 /* AppDelegate.m */; };
 		6E2D63F11F69252E004E5185 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63F01F69252E004E5185 /* ViewController.m */; };
@@ -27,7 +28,6 @@
 		6E2D64931F692538004E5185 /* UIBezierPath+Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64281F692537004E5185 /* UIBezierPath+Symbol.m */; };
 		6E2D64941F692538004E5185 /* UIButton+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D642B1F692537004E5185 /* UIButton+__Y__.m */; };
 		6E2D64951F692538004E5185 /* UIColor+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D642E1F692537004E5185 /* UIColor+__Y__.m */; };
-		6E2D64961F692538004E5185 /* UIView+__Y_FrameSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64311F692537004E5185 /* UIView+__Y_FrameSet.m */; };
 		6E2D64971F692538004E5185 /* UITextField+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64351F692537004E5185 /* UITextField+History.m */; };
 		6E2D64981F692538004E5185 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64371F692537004E5185 /* UITextField+Shake.m */; };
 		6E2D64991F692538004E5185 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D643B1F692537004E5185 /* UIImage+Alpha.m */; };
@@ -53,7 +53,6 @@
 		6E2D64AD1F692538004E5185 /* UIView+RecursiveDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64671F692538004E5185 /* UIView+RecursiveDescription.m */; };
 		6E2D64AE1F692538004E5185 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64691F692538004E5185 /* UIView+Screenshot.m */; };
 		6E2D64AF1F692538004E5185 /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D646B1F692538004E5185 /* UIView+Shake.m */; };
-		6E2D64B01F692538004E5185 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D646D1F692538004E5185 /* UIView+Toast.m */; };
 		6E2D64B11F692538004E5185 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E2D64761F692538004E5185 /* Lato-Bold.ttf */; };
 		6E2D64B21F692538004E5185 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E2D64771F692538004E5185 /* Lato-Light.ttf */; };
 		6E2D64B31F692538004E5185 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E2D64781F692538004E5185 /* Lato-Regular.ttf */; };
@@ -64,10 +63,15 @@
 		6E2D64B81F692538004E5185 /* __Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64821F692538004E5185 /* __Base64.m */; };
 		6E2D64B91F692538004E5185 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64841F692538004E5185 /* CocoaSecurity.m */; };
 		6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */; };
-		6EE199DA1F73A60A008B66C7 /* _Y_Bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */; };
+		6EF501741F8C5D8800B768DB /* _Y_Bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EF501731F8C5D8800B768DB /* _Y_Bank.plist */; };
+		6EF501781F8C5E4300B768DB /* UIView+__Y_FrameSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF501771F8C5E4300B768DB /* UIView+__Y_FrameSet.m */; };
+		6EF5017D1F8C6F2900B768DB /* Y_Networker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5017C1F8C6F2900B768DB /* Y_Networker.m */; };
+		6EF501801F8C7A8400B768DB /* Y_ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5017F1F8C7A8400B768DB /* Y_ProgressHud.m */; };
+		6EF501841F8C7D3E00B768DB /* Y_ProgressHud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6EF501831F8C7D3E00B768DB /* Y_ProgressHud.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5796E078439F1DC4690E83DC /* Pods-__Y__.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-__Y__.debug.xcconfig"; path = "Pods/Target Support Files/Pods-__Y__/Pods-__Y__.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2D63E61F69252E004E5185 /* __Y__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __Y__.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2D63EA1F69252E004E5185 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E2D63EC1F69252E004E5185 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,8 +111,6 @@
 		6E2D642B1F692537004E5185 /* UIButton+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+__Y__.m"; sourceTree = "<group>"; };
 		6E2D642D1F692537004E5185 /* UIColor+__Y__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+__Y__.h"; sourceTree = "<group>"; };
 		6E2D642E1F692537004E5185 /* UIColor+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+__Y__.m"; sourceTree = "<group>"; };
-		6E2D64301F692537004E5185 /* UIView+__Y_FrameSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+__Y_FrameSet.h"; sourceTree = "<group>"; };
-		6E2D64311F692537004E5185 /* UIView+__Y_FrameSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+__Y_FrameSet.m"; sourceTree = "<group>"; };
 		6E2D64341F692537004E5185 /* UITextField+History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+History.h"; sourceTree = "<group>"; };
 		6E2D64351F692537004E5185 /* UITextField+History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+History.m"; sourceTree = "<group>"; };
 		6E2D64361F692537004E5185 /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
@@ -160,8 +162,6 @@
 		6E2D64691F692538004E5185 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		6E2D646A1F692538004E5185 /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
 		6E2D646B1F692538004E5185 /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
-		6E2D646C1F692538004E5185 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
-		6E2D646D1F692538004E5185 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		6E2D646E1F692538004E5185 /* UIViewCategoriesHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCategoriesHeader.h; sourceTree = "<group>"; };
 		6E2D64711F692538004E5185 /* __Y_Macro__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __Y_Macro__.h; sourceTree = "<group>"; };
 		6E2D64751F692538004E5185 /* AddedFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddedFont.h; sourceTree = "<group>"; };
@@ -179,7 +179,16 @@
 		6E2D64841F692538004E5185 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		6EA4735B1F6A2F4D00814D3D /* NSDateFormatter+__Y__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+__Y__.h"; sourceTree = "<group>"; };
 		6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+__Y__.m"; sourceTree = "<group>"; };
-		6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = _Y_Bank.plist; sourceTree = "<group>"; };
+		6EF501731F8C5D8800B768DB /* _Y_Bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = _Y_Bank.plist; sourceTree = "<group>"; };
+		6EF501761F8C5E4300B768DB /* UIView+__Y_FrameSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+__Y_FrameSet.h"; sourceTree = "<group>"; };
+		6EF501771F8C5E4300B768DB /* UIView+__Y_FrameSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+__Y_FrameSet.m"; sourceTree = "<group>"; };
+		6EF5017B1F8C6F2900B768DB /* Y_Networker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y_Networker.h; sourceTree = "<group>"; };
+		6EF5017C1F8C6F2900B768DB /* Y_Networker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y_Networker.m; sourceTree = "<group>"; };
+		6EF5017E1F8C7A8400B768DB /* Y_ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y_ProgressHud.h; sourceTree = "<group>"; };
+		6EF5017F1F8C7A8400B768DB /* Y_ProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y_ProgressHud.m; sourceTree = "<group>"; };
+		6EF501831F8C7D3E00B768DB /* Y_ProgressHud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Y_ProgressHud.bundle; sourceTree = "<group>"; };
+		964AC55E6DBBC18B88968D6C /* libPods-__Y__.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-__Y__.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15CFF5F15D000B81C7DA857 /* Pods-__Y__.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-__Y__.release.xcconfig"; path = "Pods/Target Support Files/Pods-__Y__/Pods-__Y__.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4DA0768B7FE0565EE06021 /* libPods-__Y__.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +209,8 @@
 				6E2D64001F692537004E5185 /* __Y_Utils__ */,
 				6E2D63E81F69252E004E5185 /* __Y__ */,
 				6E2D63E71F69252E004E5185 /* Products */,
+				CF83AEA63BC85FD35904968A /* Pods */,
+				DC7C8A5326C4A37EC1F80BE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,12 +250,13 @@
 			isa = PBXGroup;
 			children = (
 				6E2D64011F692537004E5185 /* __Y__.h */,
+				6EF5017A1F8C6EF300B768DB /* __Y_ProgressHud */,
+				6EF501791F8C6ED800B768DB /* __Y_Netwoker */,
 				6E2D64021F692537004E5185 /* __Y_Category__ */,
 				6E2D646F1F692538004E5185 /* __Y_Const__ */,
 				6E2D64701F692538004E5185 /* __Y_Macro__ */,
 				6E2D64721F692538004E5185 /* __Y_Resources__ */,
 				6E2D647C1F692538004E5185 /* __Y_Security__ */,
-				6E2D64851F692538004E5185 /* __Y_UIKit__ */,
 			);
 			path = __Y_Utils__;
 			sourceTree = "<group>";
@@ -342,7 +355,6 @@
 			children = (
 				6E2D64181F692537004E5185 /* NSString+__Y_Common__.h */,
 				6E2D64191F692537004E5185 /* NSString+__Y_Common__.m */,
-				6EE199D91F73A60A008B66C7 /* _Y_Bank.plist */,
 			);
 			path = __Y_Common__;
 			sourceTree = "<group>";
@@ -371,7 +383,6 @@
 				6E2D64211F692537004E5185 /* __Y__UIBezierPath__ */,
 				6E2D64291F692537004E5185 /* __Y_Button__ */,
 				6E2D642C1F692537004E5185 /* __Y_Color__ */,
-				6E2D642F1F692537004E5185 /* __Y_FrameSet__ */,
 				6E2D64321F692537004E5185 /* __Y_TextField__ */,
 				6E2D64381F692537004E5185 /* __Y_UIImage__ */,
 				6E2D64531F692538004E5185 /* __Y_View__ */,
@@ -416,15 +427,6 @@
 				6E2D642E1F692537004E5185 /* UIColor+__Y__.m */,
 			);
 			path = __Y_Color__;
-			sourceTree = "<group>";
-		};
-		6E2D642F1F692537004E5185 /* __Y_FrameSet__ */ = {
-			isa = PBXGroup;
-			children = (
-				6E2D64301F692537004E5185 /* UIView+__Y_FrameSet.h */,
-				6E2D64311F692537004E5185 /* UIView+__Y_FrameSet.m */,
-			);
-			path = __Y_FrameSet__;
 			sourceTree = "<group>";
 		};
 		6E2D64321F692537004E5185 /* __Y_TextField__ */ = {
@@ -489,6 +491,7 @@
 		6E2D64531F692538004E5185 /* __Y_View__ */ = {
 			isa = PBXGroup;
 			children = (
+				6EF501751F8C5E4300B768DB /* __Y_FrameSet__ */,
 				6E2D64541F692538004E5185 /* __Y_IBInspectable__ */,
 				6E2D64571F692538004E5185 /* UIView */,
 			);
@@ -527,8 +530,6 @@
 				6E2D64691F692538004E5185 /* UIView+Screenshot.m */,
 				6E2D646A1F692538004E5185 /* UIView+Shake.h */,
 				6E2D646B1F692538004E5185 /* UIView+Shake.m */,
-				6E2D646C1F692538004E5185 /* UIView+Toast.h */,
-				6E2D646D1F692538004E5185 /* UIView+Toast.m */,
 				6E2D646E1F692538004E5185 /* UIViewCategoriesHeader.h */,
 			);
 			path = UIView;
@@ -562,6 +563,7 @@
 			children = (
 				6E2D64741F692538004E5185 /* __Y_Font__ */,
 				6E2D647B1F692538004E5185 /* Area.plist */,
+				6EF501731F8C5D8800B768DB /* _Y_Bank.plist */,
 			);
 			path = __Y_Plist__;
 			sourceTree = "<group>";
@@ -608,27 +610,49 @@
 			path = Base64;
 			sourceTree = "<group>";
 		};
-		6E2D64851F692538004E5185 /* __Y_UIKit__ */ = {
+		6EF501751F8C5E4300B768DB /* __Y_FrameSet__ */ = {
 			isa = PBXGroup;
 			children = (
-				6E2D64861F692538004E5185 /* UIKit */,
-				6E2D64871F692538004E5185 /* UITextView&UITextField */,
+				6EF501761F8C5E4300B768DB /* UIView+__Y_FrameSet.h */,
+				6EF501771F8C5E4300B768DB /* UIView+__Y_FrameSet.m */,
 			);
-			path = __Y_UIKit__;
+			path = __Y_FrameSet__;
 			sourceTree = "<group>";
 		};
-		6E2D64861F692538004E5185 /* UIKit */ = {
+		6EF501791F8C6ED800B768DB /* __Y_Netwoker */ = {
 			isa = PBXGroup;
 			children = (
+				6EF5017B1F8C6F2900B768DB /* Y_Networker.h */,
+				6EF5017C1F8C6F2900B768DB /* Y_Networker.m */,
 			);
-			path = UIKit;
+			path = __Y_Netwoker;
 			sourceTree = "<group>";
 		};
-		6E2D64871F692538004E5185 /* UITextView&UITextField */ = {
+		6EF5017A1F8C6EF300B768DB /* __Y_ProgressHud */ = {
 			isa = PBXGroup;
 			children = (
+				6EF5017E1F8C7A8400B768DB /* Y_ProgressHud.h */,
+				6EF5017F1F8C7A8400B768DB /* Y_ProgressHud.m */,
+				6EF501831F8C7D3E00B768DB /* Y_ProgressHud.bundle */,
 			);
-			path = "UITextView&UITextField";
+			path = __Y_ProgressHud;
+			sourceTree = "<group>";
+		};
+		CF83AEA63BC85FD35904968A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5796E078439F1DC4690E83DC /* Pods-__Y__.debug.xcconfig */,
+				E15CFF5F15D000B81C7DA857 /* Pods-__Y__.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC7C8A5326C4A37EC1F80BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964AC55E6DBBC18B88968D6C /* libPods-__Y__.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,9 +662,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E2D63FD1F69252E004E5185 /* Build configuration list for PBXNativeTarget "__Y__" */;
 			buildPhases = (
+				6A9460F7794D0040A69FE806 /* [CP] Check Pods Manifest.lock */,
 				6E2D63E21F69252E004E5185 /* Sources */,
 				6E2D63E31F69252E004E5185 /* Frameworks */,
 				6E2D63E41F69252E004E5185 /* Resources */,
+				2B3F12F33D5572FD0F859F32 /* [CP] Embed Pods Frameworks */,
+				E1044D54A2F28F6B8B4A396F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -691,11 +718,12 @@
 			files = (
 				6E2D64B21F692538004E5185 /* Lato-Light.ttf in Resources */,
 				6E2D64B31F692538004E5185 /* Lato-Regular.ttf in Resources */,
+				6EF501841F8C7D3E00B768DB /* Y_ProgressHud.bundle in Resources */,
 				6E2D64B41F692538004E5185 /* Lato-Thin.ttf in Resources */,
 				6E2D63F91F69252E004E5185 /* LaunchScreen.storyboard in Resources */,
-				6EE199DA1F73A60A008B66C7 /* _Y_Bank.plist in Resources */,
 				6E2D63F61F69252E004E5185 /* Assets.xcassets in Resources */,
 				6E2D64B51F692538004E5185 /* Lato-ThinItalic.ttf in Resources */,
+				6EF501741F8C5D8800B768DB /* _Y_Bank.plist in Resources */,
 				6E2D64B61F692538004E5185 /* Area.plist in Resources */,
 				6E2D63F41F69252E004E5185 /* Main.storyboard in Resources */,
 				6E2D64B11F692538004E5185 /* Lato-Bold.ttf in Resources */,
@@ -704,22 +732,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B3F12F33D5572FD0F859F32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-__Y__/Pods-__Y__-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A9460F7794D0040A69FE806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1044D54A2F28F6B8B4A396F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-__Y__/Pods-__Y__-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E2D63E21F69252E004E5185 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6E2D64B81F692538004E5185 /* __Base64.m in Sources */,
+				6EF501781F8C5E4300B768DB /* UIView+__Y_FrameSet.m in Sources */,
 				6E2D64A11F692538004E5185 /* UIImage+Resize.m in Sources */,
 				6E2D64901F692538004E5185 /* NSString+__Y_Regular.m in Sources */,
 				6E2D64AA1F692538004E5185 /* UIView+draggable.m in Sources */,
 				6E2D649B1F692538004E5185 /* UIImage+Capture.m in Sources */,
 				6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */,
-				6E2D64961F692538004E5185 /* UIView+__Y_FrameSet.m in Sources */,
 				6E2D648E1F692538004E5185 /* NSString+__Y_Common__.m in Sources */,
 				6E2D648D1F692538004E5185 /* NSObject+_Y_Objc__.m in Sources */,
 				6E2D64981F692538004E5185 /* UITextField+Shake.m in Sources */,
 				6E2D64A01F692538004E5185 /* UIImage+Gif.m in Sources */,
+				6EF501801F8C7A8400B768DB /* Y_ProgressHud.m in Sources */,
 				6E2D64A21F692538004E5185 /* UIImage+Rotate.m in Sources */,
 				6E2D64A61F692538004E5185 /* UIView+Animation.m in Sources */,
 				6E2D64931F692538004E5185 /* UIBezierPath+Symbol.m in Sources */,
@@ -727,7 +804,6 @@
 				6E2D648A1F692538004E5185 /* NSDate+__Y__.m in Sources */,
 				6E2D64941F692538004E5185 /* UIButton+__Y__.m in Sources */,
 				6E2D648C1F692538004E5185 /* __Y_Foundation+Log__.m in Sources */,
-				6E2D64B01F692538004E5185 /* UIView+Toast.m in Sources */,
 				6E2D64A71F692538004E5185 /* UIView+BlockGesture.m in Sources */,
 				6E2D64891F692538004E5185 /* NSArray+__Y__.m in Sources */,
 				6E2D649A1F692538004E5185 /* UIImage+Blur.m in Sources */,
@@ -751,6 +827,7 @@
 				6E2D64AF1F692538004E5185 /* UIView+Shake.m in Sources */,
 				6E2D64A41F692538004E5185 /* UIImage+Water.m in Sources */,
 				6E2D63F11F69252E004E5185 /* ViewController.m in Sources */,
+				6EF5017D1F8C6F2900B768DB /* Y_Networker.m in Sources */,
 				6E2D63EE1F69252E004E5185 /* AppDelegate.m in Sources */,
 				6E2D64881F692538004E5185 /* UIApplication+__Y__.m in Sources */,
 				6E2D649F1F692538004E5185 /* UIImage+fixOrientation.m in Sources */,
@@ -872,6 +949,7 @@
 		};
 		6E2D63FE1F69252E004E5185 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5796E078439F1DC4690E83DC /* Pods-__Y__.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = __Y__/Info.plist;
@@ -883,6 +961,7 @@
 		};
 		6E2D63FF1F69252E004E5185 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15CFF5F15D000B81C7DA857 /* Pods-__Y__.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = __Y__/Info.plist;

@@ -20,7 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     NSLog(@"%@",[self localeDate:[NSDate date]]);
     
     NSLog(@"%@ \n %@",[ViewController y_propertyList], [ViewController y_ivarList]);
@@ -42,6 +41,18 @@
 {
 
     NSLog(@"--- %d ---",[self y_isBlank:@"   \n   "]);
+    
+    [Y_ProgressHud y_showTextOnly:@"this is a hud." _in:self.view complete:^{
+        
+        [Y_ProgressHud y_showDoneText:@"成功" _in:self.view complete:^{
+            
+            [Y_ProgressHud y_showErrorText:@"失败" _in:self.view complete:^{
+                
+            }];
+            
+        }];
+        
+    }];
 }
 
 - (BOOL)y_isBlank:(NSString *)str
@@ -59,5 +70,10 @@
     return localeDate;
 }
 
+- (IBAction)countdown:(UIButton *)button {
+    
+    [button y_startTime:10 title:@"开始" waitTittle:@"倒计时"];
+    
+}
 
 @end

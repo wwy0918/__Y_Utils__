@@ -11,8 +11,13 @@
 @interface NSDateFormatter (__Y__)
 
 /**
+ * yyyy-MM-dd HH:mm:ss 初始化
+ */
++ (instancetype)y_formatterDefault;
+
+/**
  * yyyy-MM-dd 初始化
  */
-+ (instancetype)y_YMD;
++ (instancetype)y_formatterWithYMD;
 
 @end
