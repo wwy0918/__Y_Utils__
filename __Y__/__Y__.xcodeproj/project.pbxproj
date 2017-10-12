@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F4DA0768B7FE0565EE06021 /* libPods-__Y__.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AC55E6DBBC18B88968D6C /* libPods-__Y__.a */; };
+		6E23C0731F8F1318003FA399 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E23C06E1F8F1317003FA399 /* MainTabBarViewController.m */; };
+		6E23C0741F8F1318003FA399 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E23C06F1F8F1317003FA399 /* MainViewController.m */; };
+		6E23C0751F8F1318003FA399 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E23C0721F8F1318003FA399 /* NavViewController.m */; };
 		6E2D63EB1F69252E004E5185 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63EA1F69252E004E5185 /* main.m */; };
 		6E2D63EE1F69252E004E5185 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63ED1F69252E004E5185 /* AppDelegate.m */; };
 		6E2D63F11F69252E004E5185 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D63F01F69252E004E5185 /* ViewController.m */; };
@@ -72,6 +75,12 @@
 
 /* Begin PBXFileReference section */
 		5796E078439F1DC4690E83DC /* Pods-__Y__.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-__Y__.debug.xcconfig"; path = "Pods/Target Support Files/Pods-__Y__/Pods-__Y__.debug.xcconfig"; sourceTree = "<group>"; };
+		6E23C06D1F8F1317003FA399 /* MainTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		6E23C06E1F8F1317003FA399 /* MainTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		6E23C06F1F8F1317003FA399 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6E23C0701F8F1318003FA399 /* NavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		6E23C0711F8F1318003FA399 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6E23C0721F8F1318003FA399 /* NavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		6E2D63E61F69252E004E5185 /* __Y__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __Y__.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2D63EA1F69252E004E5185 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E2D63EC1F69252E004E5185 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +236,12 @@
 			children = (
 				6E2D63EC1F69252E004E5185 /* AppDelegate.h */,
 				6E2D63ED1F69252E004E5185 /* AppDelegate.m */,
+				6E23C06D1F8F1317003FA399 /* MainTabBarViewController.h */,
+				6E23C06E1F8F1317003FA399 /* MainTabBarViewController.m */,
+				6E23C0701F8F1318003FA399 /* NavViewController.h */,
+				6E23C0721F8F1318003FA399 /* NavViewController.m */,
+				6E23C0711F8F1318003FA399 /* MainViewController.h */,
+				6E23C06F1F8F1317003FA399 /* MainViewController.m */,
 				6E2D63EF1F69252E004E5185 /* ViewController.h */,
 				6E2D63F01F69252E004E5185 /* ViewController.m */,
 				6E2D63F21F69252E004E5185 /* Main.storyboard */,
@@ -797,6 +812,7 @@
 				6E2D64AA1F692538004E5185 /* UIView+draggable.m in Sources */,
 				6E2D649B1F692538004E5185 /* UIImage+Capture.m in Sources */,
 				6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */,
+				6E23C0741F8F1318003FA399 /* MainViewController.m in Sources */,
 				6E2D648E1F692538004E5185 /* NSString+__Y_Common__.m in Sources */,
 				6E2D648D1F692538004E5185 /* NSObject+_Y_Objc__.m in Sources */,
 				6E2D64981F692538004E5185 /* UITextField+Shake.m in Sources */,
@@ -819,6 +835,7 @@
 				6E2D64AE1F692538004E5185 /* UIView+Screenshot.m in Sources */,
 				6E2D64971F692538004E5185 /* UITextField+History.m in Sources */,
 				6E2D64991F692538004E5185 /* UIImage+Alpha.m in Sources */,
+				6E23C0751F8F1318003FA399 /* NavViewController.m in Sources */,
 				6E2D64951F692538004E5185 /* UIColor+__Y__.m in Sources */,
 				6E2D64A31F692538004E5185 /* UIImage+RoundImage.m in Sources */,
 				6E2D64A51F692538004E5185 /* UIView+__Y_IBInspectable__.m in Sources */,
@@ -827,6 +844,7 @@
 				6E2D64921F692538004E5185 /* UIBezierPath+SVG.m in Sources */,
 				6E2D648B1F692538004E5185 /* NSDictionary+__Y__.m in Sources */,
 				6E2D64911F692538004E5185 /* UIBezierPath+BasicShapes.m in Sources */,
+				6E23C0731F8F1318003FA399 /* MainTabBarViewController.m in Sources */,
 				6E2D64A81F692538004E5185 /* UIView+CurrentController.m in Sources */,
 				6E2D64B71F692538004E5185 /* __Y_RSA__.m in Sources */,
 				6E2D64AF1F692538004E5185 /* UIView+Shake.m in Sources */,
