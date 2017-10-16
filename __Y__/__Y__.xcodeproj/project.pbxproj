@@ -268,7 +268,6 @@
 				6EF5017A1F8C6EF300B768DB /* __Y_ProgressHud */,
 				6EF501791F8C6ED800B768DB /* __Y_Netwoker */,
 				6E2D64021F692537004E5185 /* __Y_Category__ */,
-				6E2D646F1F692538004E5185 /* __Y_Const__ */,
 				6E2D64701F692538004E5185 /* __Y_Macro__ */,
 				6E2D64721F692538004E5185 /* __Y_Resources__ */,
 				6E2D647C1F692538004E5185 /* __Y_Security__ */,
@@ -548,13 +547,6 @@
 				6E2D646E1F692538004E5185 /* UIViewCategoriesHeader.h */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		6E2D646F1F692538004E5185 /* __Y_Const__ */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = __Y_Const__;
 			sourceTree = "<group>";
 		};
 		6E2D64701F692538004E5185 /* __Y_Macro__ */ = {
