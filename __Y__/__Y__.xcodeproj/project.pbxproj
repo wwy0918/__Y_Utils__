@@ -66,7 +66,6 @@
 		6E2D64B81F692538004E5185 /* __Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64821F692538004E5185 /* __Base64.m */; };
 		6E2D64B91F692538004E5185 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D64841F692538004E5185 /* CocoaSecurity.m */; };
 		6EA4735D1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */; };
-		6EBA131C1FA0810700571C7D /* sss.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBA131B1FA0810700571C7D /* sss.m */; };
 		6EF501741F8C5D8800B768DB /* _Y_Bank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EF501731F8C5D8800B768DB /* _Y_Bank.plist */; };
 		6EF501781F8C5E4300B768DB /* UIView+__Y_FrameSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF501771F8C5E4300B768DB /* UIView+__Y_FrameSet.m */; };
 		6EF5017D1F8C6F2900B768DB /* Y_Networker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5017C1F8C6F2900B768DB /* Y_Networker.m */; };
@@ -189,8 +188,6 @@
 		6E2D64841F692538004E5185 /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		6EA4735B1F6A2F4D00814D3D /* NSDateFormatter+__Y__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+__Y__.h"; sourceTree = "<group>"; };
 		6EA4735C1F6A2F4D00814D3D /* NSDateFormatter+__Y__.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+__Y__.m"; sourceTree = "<group>"; };
-		6EBA131A1FA0810700571C7D /* sss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sss.h; sourceTree = "<group>"; };
-		6EBA131B1FA0810700571C7D /* sss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sss.m; sourceTree = "<group>"; };
 		6EF501731F8C5D8800B768DB /* _Y_Bank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = _Y_Bank.plist; sourceTree = "<group>"; };
 		6EF501761F8C5E4300B768DB /* UIView+__Y_FrameSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+__Y_FrameSet.h"; sourceTree = "<group>"; };
 		6EF501771F8C5E4300B768DB /* UIView+__Y_FrameSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+__Y_FrameSet.m"; sourceTree = "<group>"; };
@@ -239,8 +236,6 @@
 			children = (
 				6E2D63EC1F69252E004E5185 /* AppDelegate.h */,
 				6E2D63ED1F69252E004E5185 /* AppDelegate.m */,
-				6EBA131A1FA0810700571C7D /* sss.h */,
-				6EBA131B1FA0810700571C7D /* sss.m */,
 				6E23C06D1F8F1317003FA399 /* MainTabBarViewController.h */,
 				6E23C06E1F8F1317003FA399 /* MainTabBarViewController.m */,
 				6E23C0701F8F1318003FA399 /* NavViewController.h */,
@@ -842,7 +837,6 @@
 				6E2D648B1F692538004E5185 /* NSDictionary+__Y__.m in Sources */,
 				6E2D64911F692538004E5185 /* UIBezierPath+BasicShapes.m in Sources */,
 				6E23C0731F8F1318003FA399 /* MainTabBarViewController.m in Sources */,
-				6EBA131C1FA0810700571C7D /* sss.m in Sources */,
 				6E2D64A81F692538004E5185 /* UIView+CurrentController.m in Sources */,
 				6E2D64B71F692538004E5185 /* __Y_RSA__.m in Sources */,
 				6E2D64AF1F692538004E5185 /* UIView+Shake.m in Sources */,
