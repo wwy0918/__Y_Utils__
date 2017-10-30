@@ -46,5 +46,10 @@
 /// 程序的大小 包括文件 缓冲 以及 下载
 - (NSString *)y_applicationSize;
 
+///// rootVc
+//- (UIViewController *)y_rootViewController;
+//
+///// 根控制器的子视图
+//- (UIViewController *)y_subViewControllerAt:(NSInteger)i;
 
 @end

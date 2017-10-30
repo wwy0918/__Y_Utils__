@@ -696,6 +696,7 @@
 				TargetAttributes = {
 					6E2D63E51F69252E004E5185 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3W6RRJYCPG;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -967,7 +968,9 @@
 			baseConfigurationReference = 5796E078439F1DC4690E83DC /* Pods-__Y__.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3W6RRJYCPG;
 				INFOPLIST_FILE = __Y__/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicdata.--Y--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -979,7 +982,9 @@
 			baseConfigurationReference = E15CFF5F15D000B81C7DA857 /* Pods-__Y__.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3W6RRJYCPG;
 				INFOPLIST_FILE = __Y__/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unicdata.--Y--";
 				PRODUCT_NAME = "$(TARGET_NAME)";

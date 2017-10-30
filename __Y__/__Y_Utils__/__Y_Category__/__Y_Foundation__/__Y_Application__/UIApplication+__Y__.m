@@ -170,5 +170,19 @@
     return folderSize;
 }
 
+//- (UIViewController *)y_rootViewController
+//{
+//    return self.keyWindow.rootViewController;
+//}
+//
+//- (UIViewController *)y_subViewControllerAt:(NSInteger)i
+//{
+//    UIViewController *rootTb = [self y_rootViewController];
+//    if (rootTb.viewControllers.count > i) {
+//        return rootTb.viewControllers[i];
+//    }
+//    return nil;
+//}
+
 
 @end
