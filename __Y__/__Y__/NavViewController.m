@@ -27,7 +27,7 @@
     id target = self.interactivePopGestureRecognizer.delegate;
     // 创建自己的侧滑手势
     // handleNavigationTransition: 是系统自带的全屏手势响应方法,不需要自己去实现,系统已经实现好了
-    UIPanGestureRecognizer *popGesture = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    UIPanGestureRecognizer *popGesture = [[UIPanGestureRecognizer alloc] initWithTarget:target action:NSSelectorFromString(@"handleNavigationTransition:")];
     popGesture.delegate = self;
     [self.view addGestureRecognizer:popGesture];
     // 禁用系统自带的全屏手势

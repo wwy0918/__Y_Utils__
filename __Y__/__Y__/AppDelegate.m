@@ -23,7 +23,7 @@
 //    MainTabBarViewController *tabBarVc = [[MainTabBarViewController alloc] init];
 //    self.window.rootViewController = tabBarVc;
 //    [self.window makeKeyAndVisible];
-    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     return YES;
 }
 
